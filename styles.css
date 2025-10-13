@@ -10,7 +10,7 @@ body {
 }
 
 .quiz-container {
-    background-color: white;
+    background-color: rgb(97, 165, 230);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@ h1 {
     font-size: 16px;
     border: 2px solid #ddd;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(221, 223, 132);
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -81,7 +81,7 @@ h1 {
     width: 100%;
     padding: 15px;
     font-size: 16px;
-    background-color: #2196F3;
+    background-color: #cead68;
     color: white;
     border: none;
     border-radius: 5px;

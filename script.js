@@ -1,42 +1,42 @@
 // Array of question objects
 const questions = [
     {
-        question: "What does HTML stand for?",
+        question: "What app or interactive element of tech allows you to search the internet?",
         answers: [
-            "Hyper Text Markup Language",
-            "High Tech Modern Language",
-            "Home Tool Markup Language",
-            "Hyperlinks and Text Markup Language"
+            "Browser",
+            "Microsoft Office",
+            "Apple OS",
+            "File folders and files"
         ],
         correctAnswer: 0
     },
     {
-        question: "Which language is used for styling web pages?",
+        question: "Which anser is a typically accepted photo format for upload?",
         answers: [
-            "JavaScript",
-            "Python",
-            "CSS",
+            "TXT",
+            "JS",
+            "JPEG",
             "HTML"
         ],
         correctAnswer: 2
     },
     {
-        question: "What does DOM stand for?",
+        question: "What would be a the best option for submitting a specific question thgough a website for an organization?",
         answers: [
-            "Document Object Model",
-            "Data Object Management",
-            "Digital Optical Media",
-            "Desktop Operating Mode"
+            "Contact Us form",
+            "About Us page",
+            "Location page",
+            "Register as New User form"
         ],
         correctAnswer: 0
     },
     {
-        question: "Which symbol is used for single-line comments in JavaScript?",
+        question: "What would be the best answer for what user Data can be?",
         answers: [
-            "/* */",
-            "//",
-            "#",
-            "<!-->"
+            "How many visits a website receives",
+            "Preffered Contact Method",
+            "Browser specific site performance",
+            "Required MFA methods"
         ],
         correctAnswer: 1
     }
