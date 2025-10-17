@@ -58,10 +58,11 @@ function displayQuestion() {
     answerButtons.forEach((button, index) => {
         button.textContent = currentQuestion.answers[index];
         button.disabled = false;
-        button.classList.remove('correct', 'incorrect');
+        button.style.backgroundColor = ""; // Reset background color
     });
     
     feedback.textContent = '';
+    nextBtn.style.display = 'none';
 }
 
 // Handle answer selection
@@ -72,11 +73,11 @@ function handleAnswerClick(event) {
     
     // Check if answer is correct
     if (selectedIndex === currentQuestion.correctAnswer) {
-        selectedButton.classList.add('correct');
+        selectedButton.style.backgroundColor = 'lightgreen';
         feedback.textContent = 'Correct!';
     } else {
-        selectedButton.classList.add('incorrect');
-        answerButtons[currentQuestion.correctAnswer].classList.add('correct');
+        selectedButton.style.backgroundColor = 'lightcoral';
+        answerButtons[currentQuestion.correctAnswer].style.backgroundColor = 'lightgreen';
         feedback.textContent = 'Incorrect! The correct answer is highlighted.';
     }
     
@@ -84,6 +85,8 @@ function handleAnswerClick(event) {
     answerButtons.forEach(button => {
         button.disabled = true;
     });
+    //Shoe next button
+    nextBtn.style.display = 'block';
 }
 
 // Handle next question
