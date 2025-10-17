@@ -74,12 +74,10 @@ function handleAnswerClick(event) {
     if (selectedIndex === currentQuestion.correctAnswer) {
         selectedButton.classList.add('correct');
         feedback.textContent = 'Correct!';
-        feedback.style.color = '#4CAF50';
     } else {
         selectedButton.classList.add('incorrect');
         answerButtons[currentQuestion.correctAnswer].classList.add('correct');
         feedback.textContent = 'Incorrect! The correct answer is highlighted.';
-        feedback.style.color = '#f44336';
     }
     
     // Disable all answer buttons after selection
@@ -100,7 +98,6 @@ function handleNextQuestion() {
             button.style.display = 'none';
         });
         feedback.textContent = 'Thank you for playing!';
-        feedback.style.color = '#2196F3';
         nextBtn.style.display = 'none';
     }
 }
